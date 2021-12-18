@@ -30,3 +30,51 @@
 .mdl-navigation__link:hover {
     transform:scale(1.2);
 }
+#ball{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 5em;
+    transition: top 0.2s, left 0.2s;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 95%;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    visibility: hidden;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
